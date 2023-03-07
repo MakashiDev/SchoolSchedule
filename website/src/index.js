@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-const name = "Christian";
+const name = "Christian"; // Burner name
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -29,8 +29,12 @@ if (hours < 12) {
 root.render(
 	<div>
 		<h1 className="welcome">
-			Good {time} {name}
-		</h1>
-		<h2 className="day">{today} Schedule</h2>
+			Good {time} {name}{" "}
+		</h1>{" "}
+		<h2 className="day">
+			{" "}
+			{today}
+			Schedule{" "}
+		</h2>{" "}
 	</div>
 );
