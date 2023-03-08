@@ -37,7 +37,18 @@ root.render(
 			Schedule
 		</h2>
 		<div className="Schedule">
-			<ScheduleCard />
+			<ScheduleCard
+				nameClass="Science 7"
+				teacher="Gallew"
+				time="10:00-11:26"
+				period="6"
+			/>
+			<ScheduleCard
+				nameClass="A Lunch"
+				teacher=""
+				time="11:26-11:56"
+				period=""
+			/>
 		</div>
 	</div>
 );

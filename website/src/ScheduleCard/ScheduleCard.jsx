@@ -1,10 +1,10 @@
 import React from "react";
 
 export default function ScheduleCard(data) {
-	let nameClass = "Science 7"; //data.class; // DO NOT RENAME
-	let teacher = "Gallew"; //data.teacher;
-	let time = "10:00-11:56"; //data.time;
-	let period = "6"; //data.period;
+	let nameClass = data.nameClass; //"Science 7";  // DO NOT RENAME
+	let teacher = data.teacher; //"Gallew";
+	let time = data.time; //"10:00-11:56";
+	let period = data.period; //"6";
 
 	return (
 		<div>
