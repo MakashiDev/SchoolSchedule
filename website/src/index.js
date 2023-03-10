@@ -8,13 +8,13 @@ const name = "Christian"; // Burner name
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const day = new Date().getDay();
-let today = "Normal";
+let today = "Normal ";
 if (day === 4) {
-	today = "Thursday Block";
+	today = "Thursday Block ";
 } else if (day === 5) {
-	today = "Friday Block";
+	today = "Friday Block ";
 } else if ((day === 6) | (day === 0)) {
-	today = "Weekend";
+	today = "Weekend ";
 }
 
 const hours = new Date().getHours();
