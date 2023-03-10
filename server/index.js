@@ -5,7 +5,7 @@ const axios = require("axios");
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
-app.get("/getOHMSLunch:", async(req, res) => {
+app.get("/getOHMSLunch", async(req, res) => {
     let year = new Date().getFullYear();
     let month = new Date().getMonth() + 1;
     let day = new Date().getDate();
@@ -36,3 +36,5 @@ app.get("/getOHMSLunch:", async(req, res) => {
         lunchDescription: lunchDescription,
     });
 });
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
