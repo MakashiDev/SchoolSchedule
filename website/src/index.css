@@ -30,17 +30,3 @@ html {
     margin-left: 16px;
     margin-top: 46px;
 }
-
-
-/* furry is gay */
-
-.Schedule {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 20px;
-    gap: 14px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-}
