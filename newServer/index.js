@@ -8,8 +8,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => res.send("Hello World!"));
-
 app.get("/getOHMSLunch", async(req, res) => {
     let year = new Date().getFullYear();
     let month = new Date().getMonth() + 1;
@@ -84,7 +82,13 @@ app.post("/skywardLogin", async(req, res) => {
             },
         }
     );
-    res.send(login.data);
+    res.send();
+});
+app.use((req, res, next) => {
+    return res.status(404).json({
+        error: "Not Found",
+    });
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+//module.exports.handler = serverless(app);
+app.listen(5550, () => console.log(`listening on port ${port}!`));
